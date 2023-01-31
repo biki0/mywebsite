@@ -1,0 +1,39 @@
+.footer-info {		  
+    
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+p, ul {
+    line-height: 50%;
+}
+
+.posts {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+}
+  
+.posts li {
+    padding-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+  
+a:visited {
+    color: whitesmoke;
+}
+  
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+  
