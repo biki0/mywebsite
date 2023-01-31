@@ -2,13 +2,9 @@ import Heading from "./Heading"
 import CSS from 'csstype'
 
 
-
-
-
 const dStyle: CSS.Properties = {
 
     marginLeft: "30px"
-
 
 }
 
