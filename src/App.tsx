@@ -4,13 +4,11 @@ import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import SnakeGame from "./components/SnakeGame"
-
+import TicTacToe from "./components/TicTacToe/TicTacToe"
 
 function App() {
   
-  
-  
-  
+
   return (
   
   <>
@@ -22,13 +20,12 @@ function App() {
 
       <Route path="/" element={<Home/>} />
       <Route path="/snakegame" element={<SnakeGame/>} />
+      <Route path="/tictactoe" element={<TicTacToe/>} />
 
     </Routes>
 
 
-
-
-    <Footer info="Play bad games with bugs. Most games created in C++" />
+    <Footer info="Just learning random things!!!" />
   
   </>
   

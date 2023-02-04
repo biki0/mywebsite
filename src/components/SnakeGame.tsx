@@ -9,20 +9,24 @@ const dStyle: CSS.Properties = {
 }
 
 const SnakeGame = () => {
-
+            
     return (
 
         <>
-            
             
             <Heading title="Snake Game" />
 
             <div style={dStyle}>
             <p> XDXDXDXD</p>
             </div>
+
+            
+        
         </>
 
     )
+    
+    
 
 }
 
