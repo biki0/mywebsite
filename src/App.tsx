@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import SnakeGame from "./components/SnakeGame"
 import TicTacToe from "./components/TicTacToe/TicTacToe"
+import BinDecConverter from "./components/BinaryDecimalConverter/BinDecConverter"
 
 function App() {
   
@@ -18,9 +19,10 @@ function App() {
 
     <Routes>
 
-      <Route path="/" element={<Home/>} />
-      <Route path="/snakegame" element={<SnakeGame/>} />
-      <Route path="/tictactoe" element={<TicTacToe/>} />
+      <Route path="/" element={ <Home /> } />
+      <Route path="/snakegame" element={ <SnakeGame /> } />
+      <Route path="/tictactoe" element={ <TicTacToe /> } />
+      <Route path="bindec" element={ <BinDecConverter /> } />
 
     </Routes>
 

@@ -7,7 +7,8 @@ type HeadingProps = { title: string }
 const h1Style: CSS.Properties = {
 
     marginTop: "30px",
-    marginRight: "30px"
+    marginRight: "30px",
+    marginBottom: "30px"
 
 }
 

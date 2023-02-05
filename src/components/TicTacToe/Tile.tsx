@@ -1,13 +1,15 @@
 import "./board.css"
 
-type TileProps = {value: string, click: any}
+type TileProps = { value: string, click: any }
 
-const Tile = ({value, click}: TileProps) => {
+const Tile = ( { value, click } : TileProps) => {
 
-    return(
+    return (
 
-        <button onClick={click}>
-            <p className="val">{value}</p>
+        <button className="tile" onClick={ click }>
+
+            <p className="val">{ value }</p>
+            
         </button>
 
     )
