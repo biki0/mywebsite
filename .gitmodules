@@ -1,0 +1,3 @@
+[submodule "emscripten-component-base"]
+	path = emscripten-component-base
+	url = https://github.com/devappd/emscripten-component-base.git
