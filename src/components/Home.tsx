@@ -15,7 +15,7 @@ const Home = () => {
                     <li><a href="/snakegame"> <h1>Snake Game</h1></a></li>
                     <li><a href="/tictactoe"> <h1>Tic Tac Toe</h1> </a></li>
                     <li><a href="/bindec"> <h1>Binary - Decimal</h1> </a></li>
-                    <li><a href="/"> <h1>Snake Game</h1> </a></li>
+                    <li><a href="/"> <h1>:)</h1> </a></li>
             
                 </ul>
             
