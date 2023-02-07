@@ -4,7 +4,7 @@ import "./bindec.css"
 
 const BinDecConverter = () => {
 
-    const [userInput, setUserInput] = useState("");
+    const [userInput, setUserInput] = useState("0");
     const [switchMode, setSwitchMode] = useState(false);
     let invalidInput: boolean = false;
     let result: number = 0;
@@ -12,6 +12,9 @@ const BinDecConverter = () => {
 
     const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUserInput(event.target.value)
+    }
+    const clearInput = () => {
+        setUserInput("");
     }
 
     const modeButton = () => {
@@ -58,7 +61,7 @@ const BinDecConverter = () => {
                 {invalidInput && <div className="invalid-info">Invalid input! Enter 0 or 1</div>}
                 {showResult && <div className="result">{result}</div>}
 
-                <input type="text" value={userInput} onChange={handleInput} />
+                <input type="text" value={userInput} onClick={clearInput} onChange={handleInput} />
 
                 <button className="change-button" onClick={modeButton}>Decimal to Binary</button>
                 
@@ -80,7 +83,7 @@ const BinDecConverter = () => {
                 {invalidInput && <div className="invalid-info">Invalid input! Enter numbers only</div>}
                 {showResult && <div className="result">{result}</div>}
 
-                <input type="text" value={userInput} onChange={handleInput} />
+                <input type="text" value={userInput} onClick={clearInput} onChange={handleInput} />
 
                 <button className="change-button" onClick={modeButton}>Binary to Decimal</button>
                 
