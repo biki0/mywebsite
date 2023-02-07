@@ -15,7 +15,7 @@ const SnakeGame = () => {
 
             <div style={ dStyle }>
             <p> COMING SOON (WHEN I FIGURE OUT HOW TO EMBED WASM WITH REACT TYPESCRIPT!!!</p>
-            <p>For now play it on -&gt; <a style={aStyle} href="https://dbofficial.us/">HERE</a>. It was made with C++.</p>
+            <p>For now play it on -&gt; <a target="_blank" style={aStyle} href="https://dbofficial.us/">HERE</a>. It was made with C++.</p>
             </div>
 
             
