@@ -4,7 +4,7 @@ import Tile from "./Tile"
 
 import "./board.css"
 
-let winningPosition = [
+const winningPosition = [
     [0, 1, 2],
     [0, 3, 6],
     [0, 4, 8],
@@ -19,17 +19,19 @@ const TicTacToe = () => {
 
     const [board, boardUpdate] = useState<string[]>([]);
     const [player, setPlayer] = useState("X");
-    const [errorButton, setErrorButton] = useState(false);
     const [xWon, setXWon] = useState(false);
     const [oWon, setOWon] = useState(false);
 
     const checkWinner = () => {
 
         for(let [x,y,z] of winningPosition){
+            
             if(board[x] && board[x] == board[y] && board[x] == board[z]){
                 return board[x];
             }
+        
         }
+        
         return "";
 
     }
@@ -46,13 +48,11 @@ const TicTacToe = () => {
 
         setXWon("X" === checkWinner());
         setOWon("O" === checkWinner());
-        console.log(xWon);
-        console.log(oWon);
+
     }
 
     const reset = () => {
 
-        setErrorButton(false);
         boardUpdate([]);
         setPlayer("X"); 
         setXWon(false);
@@ -67,7 +67,6 @@ const TicTacToe = () => {
             
             <Heading title="Tic Tac Toe" />
             
-
             <div className="board">
 
                 <Tile value={ board[0] } click={ () => tileClicked(0) } />
@@ -105,7 +104,6 @@ const TicTacToe = () => {
         </>
         
     )
-
 
 }
 
