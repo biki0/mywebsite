@@ -26,7 +26,7 @@ const TicTacToe = () => {
 
         for(let [x,y,z] of winningPosition){
             
-            if(board[x] == board[y] && board[x] == board[z]){
+            if(board[x] && board[x] == board[y] && board[x] == board[z]){
                 return board[x];
             }
         
@@ -34,12 +34,6 @@ const TicTacToe = () => {
         
         return "";
 
-    }
-
-    const boardFilled = () => {
-        for(let i=0; i<board.length; ++i){
-            board[i]
-        }
     }
 
     const tileClicked = ( position: number ) => {
@@ -66,9 +60,6 @@ const TicTacToe = () => {
     
     }
 
-    let showMessage: boolean = (board.length == 9 && !board.includes(undefined!));
-
-
     return (
         
         <>
@@ -89,41 +80,52 @@ const TicTacToe = () => {
 
             </div>
 
-            
-
             {xWon &&
 
                 <>
+                    
                     <div className="end-message">
+                       
                         <p>Player X won</p>
+                    
                     </div>
                     
+                    <button className="reset-button" onClick={ reset }>Reset</button>
+                
                 </>
+
             }
 
             {oWon &&
 
                 <>
+                    
                     <div className="end-message">
+                    
                         <p>Player O won </p>
+                    
                     </div>
                     
+                    <button className="reset-button" onClick={ reset }>Reset</button>
+                
                 </>
+
             }
 
-            {showMessage && board.length && !xWon && !oWon &&
+            {(board.length == 9 && !board.includes(undefined!)) && board.length && !xWon && !oWon &&
                 
                 <>
             
                     <div className="end-message">
-                        <p>No one won </p>
+
+                        <p>No one won </p> 
+                        <button className="reset-button" onClick={ reset }>Reset</button>
+                    
                     </div>
-            
+                
                 </>
-            
+                
             }
-            
-            <button className="reset-button" onClick={ reset }>Reset</button>
             
         </>
         
