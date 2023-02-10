@@ -26,7 +26,7 @@ const TicTacToe = () => {
 
         for(let [x,y,z] of winningPosition){
             
-            if(board[x] && board[x] == board[y] && board[x] == board[z]){
+            if(board[x] == board[y] && board[x] == board[z]){
                 return board[x];
             }
         
