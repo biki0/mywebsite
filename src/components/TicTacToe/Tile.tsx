@@ -2,7 +2,7 @@ import "./board.css"
 
 type TileProps = { value: string, click: any }
 
-const Tile = ( { value, click } : TileProps) => {
+const Tile = ( { value, click } : TileProps ) => {
 
     return (
 

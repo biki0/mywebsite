@@ -80,46 +80,38 @@ const TicTacToe = () => {
 
             </div>
 
-            {xWon &&
-
                 <>
                     
                     <div className="end-message">
-                       
-                        <p>Player X won</p>
+                        {xWon && 
+                            
+                            <p>Player X won! </p> 
+                    
+                        }
+                        {oWon && 
+                    
+                            <p>Player O won! </p> 
+                    
+                        }
                     
                     </div>
                     
-                    <button className="reset-button" onClick={ reset }>Reset</button>
-                
+                    { (xWon || oWon) && 
+                    
+                        <button className="reset-button" onClick={ reset }>Play Again</button>
+                    
+                    }
                 </>
 
-            }
 
-            {oWon &&
-
-                <>
-                    
-                    <div className="end-message">
-                    
-                        <p>Player O won </p>
-                    
-                    </div>
-                    
-                    <button className="reset-button" onClick={ reset }>Reset</button>
-                
-                </>
-
-            }
-
-            {(board.length == 9 && !board.includes(undefined!)) && board.length && !xWon && !oWon &&
+            {(board.length == 9 && !board.includes(undefined!)) && !xWon && !oWon &&
                 
                 <>
             
                     <div className="end-message">
 
-                        <p>No one won </p> 
-                        <button className="reset-button" onClick={ reset }>Reset</button>
+                        <p>No Winner! </p> 
+                        <button className="reset-button" onClick={ reset }>Play Again</button>
                     
                     </div>
                 
