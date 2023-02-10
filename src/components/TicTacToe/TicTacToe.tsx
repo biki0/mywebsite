@@ -36,6 +36,12 @@ const TicTacToe = () => {
 
     }
 
+    const boardFilled = () => {
+        for(let i=0; i<board.length; ++i){
+            board[i]
+        }
+    }
+
     const tileClicked = ( position: number ) => {
         
         if(board[position] == 'X' || board[position] == 'O') { return }
@@ -60,6 +66,8 @@ const TicTacToe = () => {
     
     }
 
+    let showMessage: boolean = (board.length == 9 && !board.includes(undefined!));
+
 
     return (
         
@@ -81,13 +89,15 @@ const TicTacToe = () => {
 
             </div>
 
+            
+
             {xWon &&
 
                 <>
                     <div className="end-message">
                         <p>Player X won</p>
                     </div>
-                    <button className="reset-button" onClick={ reset }>Play Again</button>
+                    
                 </>
             }
 
@@ -97,10 +107,24 @@ const TicTacToe = () => {
                     <div className="end-message">
                         <p>Player O won </p>
                     </div>
-                    <button className="reset-button" onClick={ reset }>Play Again</button>
+                    
                 </>
             }
 
+            {showMessage && board.length && !xWon && !oWon &&
+                
+                <>
+            
+                    <div className="end-message">
+                        <p>No one won </p>
+                    </div>
+            
+                </>
+            
+            }
+            
+            <button className="reset-button" onClick={ reset }>Reset</button>
+            
         </>
         
     )
