@@ -1,0 +1,52 @@
+.input-boxes {
+
+    display: inline-block;
+    margin: 20px;
+
+}
+
+.input-boxes h2{
+
+    display: block;
+
+}
+
+.input-boxes .fp-val {
+    width: 325px;
+}
+
+.input-boxes .bit-val {
+    width: 200px;
+}
+
+.input-boxes .dpoint-val {
+    width: 100px;
+}
+
+
+.input-boxes input {
+
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 46px;
+    width: 100%;
+    max-width: 500px;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+}
+
+.card {
+    margin: 30px;
+}
+
+.container {
+    padding: 0px;
+   
+}
+.container h3{
+    font-size: 1.2rem;
+    margin: 10px;
+}

@@ -58,7 +58,7 @@ const BinDecConverter = () => {
                 {invalidInput && <div className="invalid-info">Invalid input! Enter 0 or 1</div>}
                 {showResult && <div className="result">{result}</div>}
 
-                <input type="text" value={userInput} onChange={handleInput} />
+                <input className="u-input" type="text" value={userInput} onChange={handleInput} />
 
                 <button className="change-button" onClick={modeButton}>Decimal to Binary</button>
                 
@@ -80,7 +80,7 @@ const BinDecConverter = () => {
                 {invalidInput && <div className="invalid-info">Invalid input! Enter numbers only</div>}
                 {showResult && <div className="result">{result}</div>}
 
-                <input type="text" value={userInput} onChange={handleInput} />
+                <input className="u-input" type="text" value={userInput} onChange={handleInput} />
 
                 <button className="change-button" onClick={modeButton}>Binary to Decimal</button>
                 
