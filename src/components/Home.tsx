@@ -3,7 +3,6 @@ import CSS from 'csstype'
 
 const Home = () => {
 
-
     return (
 
         <div>
