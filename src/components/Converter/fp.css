@@ -28,6 +28,7 @@
 
     background: rgb(31, 32, 35);
     border: 1px solid rgb(60, 63, 68);
+    outline: solid rgb(60, 63, 68);
     border-radius: 4px;
     font-size: 13px;
     color: rgb(247, 248, 248);
