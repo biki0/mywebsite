@@ -28,15 +28,19 @@
 
     background: rgb(31, 32, 35);
     border: 1px solid rgb(60, 63, 68);
-    outline: solid rgb(60, 63, 68);
+    outline: solid whitesmoke;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 1.2rem;
     color: rgb(247, 248, 248);
     height: 46px;
     width: 100%;
     max-width: 500px;
     appearance: none;
     transition: border 0.15s ease 0s;
+}
+
+.input-boxes input::placeholder {
+    color: rgba(245, 245, 245, 0.76);
 }
 
 .card {
