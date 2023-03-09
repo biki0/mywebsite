@@ -29,7 +29,7 @@ function App() {
     </Routes>
 
 
-    <Footer info="Just learning random things!!!" />
+    <Footer info="BBBBBBBBBBBBBBBBBBBBBBBBBBBBB#8813" />
   
   </>
   

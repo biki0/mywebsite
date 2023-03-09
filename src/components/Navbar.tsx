@@ -14,7 +14,7 @@ const Navbar = () => {
     
         <div>
 
-                <h1 style={h1Style}><a href="/"> website.xd </a></h1>
+                <h1 style={h1Style}><a href="/"> home </a></h1>
              
         </div>
         
